@@ -6,15 +6,24 @@
     <packaging>jar</packaging>
     <version>1.1-SNAPSHOT</version>
     <name>text-encoding-util</name>
-    <url>http://maven.apache.org</url>
+    <url>https://github.com/wiztools/text-encoding-util</url>
+    <properties>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    </properties>
+    
+    <scm>
+        <connection>scm:git:https://github.com/wiztools/text-encoding-util.git</connection>
+        <developerConnection>scm:git:https://github.com/wiztools/text-encoding-util.git</developerConnection>
+        <url>https://github.com/wiztools/text-encoding-util</url>
+    </scm>
 
     <developers>
         <developer>
             <id>subwiz</id>
             <name>Subhash Chandran</name>
             <email>subwiz in the gmail.com server</email>
-            <organization>Sella Synergy India Ltd.</organization>
-            <organizationUrl>http://www.sellasynergy.com/</organizationUrl>
+            <organization>WizTools.org</organization>
+            <organizationUrl>http://www.wiztools.org/</organizationUrl>
             <roles>
                 <role>Project admin and main developer</role>
             </roles>
@@ -35,6 +44,7 @@
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-jar-plugin</artifactId>
+                <version>2.4</version>
                 <configuration>
                     <archive>
                         <manifest>
@@ -45,7 +55,7 @@
                         </manifest>
                         <manifestEntries>
                             <mode>development</mode>
-                            <url>${pom.url}</url>
+                            <url>${project.url}</url>
                         </manifestEntries>
                     </archive>
                 </configuration>
@@ -56,7 +66,7 @@
         <dependency>
             <groupId>junit</groupId>
             <artifactId>junit</artifactId>
-            <version>3.8.1</version>
+            <version>4.11</version>
             <scope>test</scope>
         </dependency>
     </dependencies>
