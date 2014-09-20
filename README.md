@@ -20,7 +20,6 @@ The binary is published as executable Jar. The usage:
   
 http://www.apache.org/licenses/LICENSE-2.0
 
-## Author
+This tool is available as part of _"The Joy of Unix in Windows Tool Bundle"_:
 
-Subhash Chandran of [WizTools.org](http://www.wiztools.org/).
-
+[![](http://static.wiztools.org/wiztools-cli-tools.png)](http://cli-bundle.wiztools.org/)
